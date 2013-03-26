@@ -1,0 +1,189 @@
+/* line 17, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/brat.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 5, ../sass/brat.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+/* line 9, ../sass/brat.scss */
+#wrapper {
+  margin: auto;
+  width: 950px;
+  height: auto;
+  text-align: center;
+}
+
+/* line 15, ../sass/brat.scss */
+#header {
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+  width: 950px;
+  float: left;
+  height: 60px;
+  background-image: url("images/pointilles.gif");
+  background-repeat: repeat-x;
+  /*background-attachment: fixed;*/
+  background-position: bottom;
+  border: solid 1px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* line 31, ../sass/brat.scss */
+#logo {
+  width: 108px;
+  float: left;
+}
+
+/* line 35, ../sass/brat.scss */
+#menu {
+  width: 600px;
+  padding-top: 30px;
+  position: relative;
+  float: right;
+  text-align: right;
+}
+
+/* line 42, ../sass/brat.scss */
+#menu ul li {
+  display: inline;
+  list-style-image: url(images/puce.gif);
+  padding-left: 1px;
+}
+
+/* line 47, ../sass/brat.scss */
+#content {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px;
+  color: #333;
+  width: 950px;
+  float: left;
+  height: 255px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+/* line 60, ../sass/brat.scss */
+#text {
+  color: #333;
+  background: #FFF;
+  margin: 15px 0px 15px 30px;
+  height: 225px;
+  width: 285px;
+  float: left;
+  border: solid 1px;
+}
+
+/* line 69, ../sass/brat.scss */
+#image {
+  float: right;
+  color: #333;
+  background: #FFF;
+  margin: 15px 0px 15px 30px;
+  height: 225px;
+  width: 600px;
+  display: inline;
+  border: solid 1px;
+}
+
+/* line 79, ../sass/brat.scss */
+.mini li {
+  height: 113px;
+  width: 150px;
+  float: left;
+  list-style: none;
+  display: inline;
+}
+
+/* line 86, ../sass/brat.scss */
+#footer {
+  width: 920px;
+  height: 40px;
+  clear: both;
+  color: #333;
+  border: solid 1px;
+  background-image: url("images/pointilles.gif");
+  background-repeat: repeat-x;
+  /*background-attachment:fixed;*/
+  background-position: top;
+  text-align: left;
+  padding: 5px 0px 0px 30px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
