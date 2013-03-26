@@ -16,7 +16,7 @@
  width: 950px;
  float: left;
  height: 60px;
- background-image: url("images/pointilles.gif");
+ background-image: url(/images/pointilles.gif);
  background-repeat: repeat-x;
  /*background-attachment: fixed;*/
  background-position: bottom;
@@ -38,7 +38,7 @@ text-align:right;
         }
 #menu ul li {
 display: inline;
-list-style-image: url(images/puce.gif);
+list-style-image: url(/images/puce.gif);
 padding-left: 1px;
                 }
 #content {
@@ -86,7 +86,7 @@ padding-left: 1px;
  clear: both;
  color: #333;
  border: solid 1px ;
- background-image: url("images/pointilles.gif");
+ background-image: url(/images/pointilles.gif);
  background-repeat: repeat-x;
   /*background-attachment:fixed;*/
  background-position: top;

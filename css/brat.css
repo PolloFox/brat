@@ -108,7 +108,7 @@ body {
   width: 950px;
   float: left;
   height: 60px;
-  background-image: url("images/pointilles.gif");
+  background-image: url(/images/pointilles.gif);
   background-repeat: repeat-x;
   /*background-attachment: fixed;*/
   background-position: bottom;
@@ -136,7 +136,7 @@ body {
 /* line 39, ../sass/brat.scss */
 #menu ul li {
   display: inline;
-  list-style-image: url(images/puce.gif);
+  list-style-image: url(/images/puce.gif);
   padding-left: 1px;
 }
 
@@ -194,7 +194,7 @@ body {
   clear: both;
   color: #333;
   border: solid 1px;
-  background-image: url("images/pointilles.gif");
+  background-image: url(/images/pointilles.gif);
   background-repeat: repeat-x;
   /*background-attachment:fixed;*/
   background-position: top;
