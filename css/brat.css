@@ -63,19 +63,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 3, ../sass/brat.scss */
+/* --- COLOURS --- */
+/* --- MIXINS --- */
+/* --- GENERAL --- */
+/* line 28, ../sass/_screen.scss */
+body {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+@media screen and (max-width: 767px) {
+  /* line 28, ../sass/_screen.scss */
+  body {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  /* line 28, ../sass/_screen.scss */
+  body {
+    font-size: 125%;
+    line-height: 120%;
+  }
+}
+
+/* line 4, ../sass/brat.scss */
 * {
   padding: 0;
   margin: 0;
 }
 
-/* line 5, ../sass/brat.scss */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-}
-
-/* line 9, ../sass/brat.scss */
+/* line 6, ../sass/brat.scss */
 #wrapper {
   margin: auto;
   width: 950px;
@@ -83,7 +100,7 @@ body {
   text-align: center;
 }
 
-/* line 15, ../sass/brat.scss */
+/* line 12, ../sass/brat.scss */
 #header {
   margin-left: auto;
   margin-right: auto;
@@ -101,13 +118,13 @@ body {
   text-align: left;
 }
 
-/* line 31, ../sass/brat.scss */
+/* line 28, ../sass/brat.scss */
 #logo {
   width: 108px;
   float: left;
 }
 
-/* line 35, ../sass/brat.scss */
+/* line 32, ../sass/brat.scss */
 #menu {
   width: 600px;
   padding-top: 30px;
@@ -116,14 +133,14 @@ body {
   text-align: right;
 }
 
-/* line 42, ../sass/brat.scss */
+/* line 39, ../sass/brat.scss */
 #menu ul li {
   display: inline;
   list-style-image: url(images/puce.gif);
   padding-left: 1px;
 }
 
-/* line 47, ../sass/brat.scss */
+/* line 44, ../sass/brat.scss */
 #content {
   display: inline-block;
   margin-left: auto;
@@ -138,7 +155,7 @@ body {
   text-align: left;
 }
 
-/* line 60, ../sass/brat.scss */
+/* line 57, ../sass/brat.scss */
 #text {
   color: #333;
   background: #FFF;
@@ -149,7 +166,7 @@ body {
   border: solid 1px;
 }
 
-/* line 69, ../sass/brat.scss */
+/* line 66, ../sass/brat.scss */
 #image {
   float: right;
   color: #333;
@@ -161,7 +178,7 @@ body {
   border: solid 1px;
 }
 
-/* line 79, ../sass/brat.scss */
+/* line 76, ../sass/brat.scss */
 .mini li {
   height: 113px;
   width: 150px;
@@ -170,7 +187,7 @@ body {
   display: inline;
 }
 
-/* line 86, ../sass/brat.scss */
+/* line 83, ../sass/brat.scss */
 #footer {
   width: 920px;
   height: 40px;
