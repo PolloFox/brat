@@ -298,8 +298,29 @@ div#content.content-descr #content-descr ul, div#content.content-descr #content-
 }
 /* line 146, ../sass/brat.scss */
 div#content.content-descr #content-references {
-  height: 300px;
+  height: 360px;
   overflow-y: auto;
+}
+/* line 150, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div {
+  display: inline-block;
+}
+/* line 153, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div:first-child {
+  margin-right: 3px;
+  font-weight: bold;
+}
+/* line 157, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div:nth-child(2) {
+  text-transform: uppercase;
+  vertical-align: top;
+  width: 93.5%;
+  border: solid 1px;
+}
+/* line 163, ../sass/brat.scss */
+div#content.content-descr #content-references ul li a:hover {
+  color: #208d9f;
+  text-decoration: none;
 }
 
 /* line 1, ../sass/_header-footer.scss */
