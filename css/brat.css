@@ -66,24 +66,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* --- COLOURS --- */
 /* --- MIXINS --- */
 /* --- GENERAL --- */
-/* line 28, ../sass/_screen.scss */
+/* line 26, ../sass/_screen.scss */
+html,
 body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 30, ../sass/_screen.scss */
+html {
+  display: table;
+}
+
+/* line 33, ../sass/_screen.scss */
+body {
+  display: table-cell;
+  vertical-align: middle;
   font-size: 80%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
+  color: #333333;
+  /*  @media screen and (max-width:767px)
+    {
+      padding:0;
+    }*/
+  /*  @media screen and (max-width:550px)
+    {
+      font-size:125%;
+      line-height:120%;
+    }*/
 }
-@media screen and (max-width: 767px) {
-  /* line 28, ../sass/_screen.scss */
-  body {
-    padding: 0;
-  }
+
+/* line 50, ../sass/_screen.scss */
+a {
+  text-decoration: none;
+  color: #333333;
 }
-@media screen and (max-width: 550px) {
-  /* line 28, ../sass/_screen.scss */
-  body {
-    font-size: 125%;
-    line-height: 120%;
-  }
+/* line 53, ../sass/_screen.scss */
+a:hover {
+  text-decoration: underline;
+  color: #5aa8c1;
+}
+/* line 57, ../sass/_screen.scss */
+a.current {
+  color: #1f8d9f;
+}
+
+/* line 61, ../sass/_screen.scss */
+h1 {
+  font-size: 120%;
+  font-weight: bold;
+  color: #208d9f;
+  margin-bottom: 2%;
 }
 
 /* line 4, ../sass/brat.scss */
@@ -92,115 +126,248 @@ body {
   margin: 0;
 }
 
-/* line 6, ../sass/brat.scss */
-#wrapper {
+/* line 7, ../sass/brat.scss */
+body div#header, body div#content, body div#footer {
   margin: auto;
-  width: 950px;
-  height: auto;
-  text-align: center;
-}
-
-/* line 12, ../sass/brat.scss */
-#header {
-  margin-left: auto;
-  margin-right: auto;
-  color: #333;
-  width: 950px;
-  float: left;
-  height: 60px;
-  background-image: url(/images/pointilles.gif);
-  background-repeat: repeat-x;
-  /*background-attachment: fixed;*/
-  background-position: bottom;
-  border: solid 1px;
-  display: inline-block;
-  vertical-align: middle;
+  width: 960px;
+  max-width: 960px;
   text-align: left;
 }
 
-/* line 28, ../sass/brat.scss */
+/* line 14, ../sass/brat.scss */
+div#content {
+  margin-top: 16px !important;
+  margin-bottom: 20px !important;
+}
+/* line 17, ../sass/brat.scss */
+div#content, div#content #content-text, div#content #content-illu {
+  min-height: 228px;
+}
+/* line 20, ../sass/brat.scss */
+div#content #content-text, div#content #content-illu {
+  margin: 1% 2.5% 1% 1.5%;
+  width: 32%;
+  max-width: 32%;
+  float: left;
+  text-align: justify;
+}
+/* line 26, ../sass/brat.scss */
+div#content #content-text span, div#content #content-illu span {
+  font-size: 80%;
+}
+/* line 30, ../sass/brat.scss */
+div#content #content-gallery, div#content #content-descr, div#content #content-references {
+  float: right;
+  width: 64%;
+  max-width: 64%;
+  overflow: hidden;
+}
+/* line 36, ../sass/brat.scss */
+div#content #content-gallery ul li {
+  display: inline;
+}
+/* line 38, ../sass/brat.scss */
+div#content #content-gallery ul li div {
+  display: inline-block;
+  height: 113px;
+  min-height: 113px;
+  max-height: 113px;
+  width: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  overflow: hidden;
+}
+/* line 49, ../sass/brat.scss */
+div#content.content-descr {
+  min-height: 300px;
+}
+/* line 51, ../sass/brat.scss */
+div#content.content-descr.content-sub-menu {
+  min-height: 360px;
+}
+/* line 54, ../sass/brat.scss */
+div#content.content-descr #content-illu {
+  height: 285px;
+  max-height: 285px;
+  overflow: hidden;
+}
+/* line 58, ../sass/brat.scss */
+div#content.content-descr #content-illu img {
+  height: 100%;
+  width: 100%;
+}
+/* line 63, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu {
+  float: left;
+  margin-left: 30px;
+}
+/* line 67, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:first-child div:first-child {
+  background-position: 0px -34px;
+}
+/* line 69, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:first-child div:first-child.current {
+  background-position: 0px 0px;
+}
+/* line 73, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:first-child a:hover div:first-child {
+  background-position: 0px 0px;
+}
+/* line 77, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:nth-child(2) {
+  margin-top: 10%;
+}
+/* line 79, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:nth-child(2) div:first-child {
+  background-position: -33px -34px;
+}
+/* line 81, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:nth-child(2) div:first-child.current {
+  background-position: -33px 0px;
+}
+/* line 85, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:nth-child(2) a:hover div:first-child {
+  background-position: -33px 0px;
+}
+/* line 89, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:last-child {
+  margin-top: 10%;
+}
+/* line 91, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:last-child div:first-child {
+  background-position: -65px -34px;
+}
+/* line 93, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:last-child div:first-child.current {
+  background-position: -65px 0px;
+}
+/* line 97, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li:last-child a:hover div:first-child {
+  background-position: -65px 0px;
+}
+/* line 101, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li {
+  line-height: 140%;
+  font-size: 105%;
+  text-transform: uppercase;
+}
+/* line 105, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li div:first-child {
+  display: inline-block;
+  background-image: url(/images/logo_brat_sigles.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 32px;
+  margin-top: -12px;
+}
+/* line 113, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li a div:nth-child(2) {
+  margin-top: -28px;
+  margin-left: 34px;
+  height: 26px;
+}
+/* line 118, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li a:hover {
+  color: #208d9f;
+}
+/* line 121, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li a.current {
+  color: #208d9f;
+}
+/* line 124, ../sass/brat.scss */
+div#content.content-descr #content-sub-menu ul li ul li {
+  font-size: 90%;
+  text-transform: none;
+  margin: 0px 0px 4px 43px !important;
+}
+/* line 132, ../sass/brat.scss */
+div#content.content-descr #content-descr p, div#content.content-descr #content-descr ul li, div#content.content-descr #content-references p, div#content.content-descr #content-references ul li {
+  margin: 1% 0px 1% 0px;
+  line-height: 120%;
+  text-align: justify;
+}
+/* line 136, ../sass/brat.scss */
+div#content.content-descr #content-descr p span, div#content.content-descr #content-descr ul li span, div#content.content-descr #content-references p span, div#content.content-descr #content-references ul li span {
+  color: #208d9f;
+}
+/* line 140, ../sass/brat.scss */
+div#content.content-descr #content-descr ul, div#content.content-descr #content-references ul {
+  display: block;
+  margin-left: 18px;
+  list-style: disc;
+}
+/* line 146, ../sass/brat.scss */
+div#content.content-descr #content-references {
+  height: 300px;
+  overflow-y: auto;
+}
+
+/* line 1, ../sass/_header-footer.scss */
+div#header, div#footer {
+  background-image: url(/images/pointilles.gif);
+  background-repeat: repeat-x;
+}
+
+/* line 5, ../sass/_header-footer.scss */
+div#header {
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  background-position: bottom;
+}
+
+/* line 11, ../sass/_header-footer.scss */
+nav {
+  float: right;
+  text-align: right;
+}
+/* line 14, ../sass/_header-footer.scss */
+nav#menu {
+  width: 65%;
+  max-width: 65%;
+  padding-top: 30px;
+}
+/* line 18, ../sass/_header-footer.scss */
+nav#menu ul li {
+  display: inline;
+  padding-left: 1px;
+}
+/* line 21, ../sass/_header-footer.scss */
+nav#menu ul li img {
+  vertical-align: middle;
+  height: 11px;
+  max-height: 11px;
+  width: 11px;
+  width: 11px;
+}
+/* line 30, ../sass/_header-footer.scss */
+nav#sub-menu {
+  float: left;
+  text-align: left;
+}
+
+/* line 35, ../sass/_header-footer.scss */
 #logo {
   width: 108px;
   float: left;
 }
 
-/* line 32, ../sass/brat.scss */
-#menu {
-  width: 600px;
-  padding-top: 30px;
-  position: relative;
-  float: right;
-  text-align: right;
-}
-
-/* line 39, ../sass/brat.scss */
-#menu ul li {
-  display: inline;
-  list-style-image: url(/images/puce.gif);
-  padding-left: 1px;
-}
-
-/* line 44, ../sass/brat.scss */
-#content {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  border: solid 1px;
-  color: #333;
-  width: 950px;
-  float: left;
-  height: 255px;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-}
-
-/* line 57, ../sass/brat.scss */
-#text {
-  color: #333;
-  background: #FFF;
-  margin: 15px 0px 15px 30px;
-  height: 225px;
-  width: 285px;
-  float: left;
-  border: solid 1px;
-}
-
-/* line 66, ../sass/brat.scss */
-#image {
-  float: right;
-  color: #333;
-  background: #FFF;
-  margin: 15px 0px 15px 30px;
-  height: 225px;
-  width: 600px;
-  display: inline;
-  border: solid 1px;
-}
-
-/* line 76, ../sass/brat.scss */
-.mini li {
-  height: 113px;
-  width: 150px;
-  float: left;
-  list-style: none;
-  display: inline;
-}
-
-/* line 83, ../sass/brat.scss */
-#footer {
-  width: 920px;
+/* line 39, ../sass/_header-footer.scss */
+div#footer {
   height: 40px;
-  clear: both;
-  color: #333;
-  border: solid 1px;
-  background-image: url(/images/pointilles.gif);
-  background-repeat: repeat-x;
-  /*background-attachment:fixed;*/
-  background-position: top;
-  text-align: left;
-  padding: 5px 0px 0px 30px;
-  display: inline-block;
+  min-height: 40px;
+  max-height: 40px;
   vertical-align: middle;
-  text-align: left;
+  background-position: top;
+}
+/* line 45, ../sass/_header-footer.scss */
+div#footer footer {
+  height: 40px;
+  min-height: 40px;
+  width: 93px;
+  min-width: 93px;
+  margin-left: 30px;
+  background-image: url(/images/logo_brat_sigles.png);
+  background-position: 0px 6px;
+  background-repeat: no-repeat;
 }

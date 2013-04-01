@@ -3,96 +3,151 @@
 
 * { padding: 0; margin: 0; }
 
-#wrapper {
- margin: auto;
- width: 950px;
- height: auto;
- text-align:center;
+body {
+  div#header, div#content, div#footer {
+    margin: auto;
+    width: 960px;
+    max-width: 960px;
+    text-align: left;
+  }
 }
-#header {
- margin-left: auto;
- margin-right: auto;
- color: #333;
- width: 950px;
- float: left;
- height: 60px;
- background-image: url(/images/pointilles.gif);
- background-repeat: repeat-x;
- /*background-attachment: fixed;*/
- background-position: bottom;
- border: solid 1px ;
- display:inline-block;
- vertical-align: middle;
- text-align:left;
-}
-#logo {
-width:108px;
-float: left;
+div#content {
+  margin-top:16px !important;
+  margin-bottom:20px !important;
+  &, #content-text, #content-illu {
+    min-height:228px;
+  }
+  #content-text, #content-illu {
+    margin: 1% 2.5% 1% 1.5%;
+    width: 32%;
+    max-width: 32%;
+    float:left;
+    text-align:justify;
+    span {
+      font-size: 80%;
+    }
+  }
+  #content-gallery, #content-descr, #content-references {
+    float:right;
+    width: 64%;
+    max-width: 64%;
+    overflow:hidden;
+  }
+  #content-gallery ul li {
+    display:inline;
+    div {
+      display:inline-block;
+      height: 113px;
+      min-height: 113px;
+      max-height: 113px;
+      width: 150px;
+      min-width: 150px;
+      max-width: 150px;
+      overflow:hidden;
+    }
+  }
+  &.content-descr {
+    min-height:300px;
+    &.content-sub-menu {
+      min-height:360px;
+    }
+    #content-illu {
+      height:285px;
+      max-height:285px;
+      overflow:hidden;
+      img {
+        height:100%;
+        width:100%;
+      }
+    }
+    #content-sub-menu {
+      float:left;
+      margin-left:30px;
+      ul li:first-child {
+        div:first-child {
+          background-position:0px -34px;
+          &.current {
+            background-position:0px 0px;
+          }
         }
-#menu {
-width: 600px;
-padding-top: 30px;
-position: relative;
-float: right;
-text-align:right;
+        a:hover div:first-child {
+          background-position:0px 0px;
         }
-#menu ul li {
-display: inline;
-list-style-image: url(/images/puce.gif);
-padding-left: 1px;
-                }
-#content {
- display: inline-block;
- margin-left: auto;
- margin-right: auto;
- border: solid 1px ;
- color: #333;
- width: 950px;
- float: left;
- height: 255px;
- display:inline-block;
- vertical-align:middle;
- text-align:left;
+      }
+      ul li:nth-child(2) {
+        margin-top:10%;
+        div:first-child {
+          background-position:-33px -34px;
+          &.current {
+            background-position:-33px 0px;
+          }
+        }
+        a:hover div:first-child {
+          background-position:-33px 0px;
+        }
+      }
+      ul li:last-child {
+        margin-top:10%;
+        div:first-child {
+          background-position:-65px -34px;
+          &.current {
+            background-position:-65px 0px;
+          }
+        }
+        a:hover div:first-child {
+          background-position:-65px 0px;
+        }
+      }
+      ul li {
+        line-height:140%;
+        font-size:105%;
+        text-transform:uppercase;
+        div:first-child {
+          display:inline-block;
+          background-image:url(/images/logo_brat_sigles.png);
+          background-repeat:no-repeat;
+          width:30px;
+          height:32px;
+          margin-top:-12px;
+        }
+        a div:nth-child(2) {
+          margin-top:-28px;
+          margin-left:34px;
+          height:26px;
+        }
+        a:hover {
+          color:$dark-blue;
+        }
+        a.current {
+          color:$dark-blue;
+        }
+        ul li {
+          font-size:90%;
+          text-transform:none;
+          margin:0px 0px 4px 43px !important;
+        }
+      }
+    }
+    #content-descr, #content-references {
+      p, ul li {
+        margin:1% 0px 1% 0px;
+        line-height:120%;
+        text-align:justify;
+        span {
+          color:$dark-blue;
+        }
+      }
+      ul {
+        display:block;
+        margin-left:18px;
+        list-style:disc;
+      }
+    }
+    #content-references {
+      height:300px;
+      overflow-y:auto;
+    }
+  }
 }
-#text {
- color: #333;
- background: #FFF;
- margin: 15px 0px 15px 30px;
- height: 225px;
- width: 285px;
- float: left;
- border: solid 1px ;
-}
-#image {
- float: right;
- color: #333;
- background: #FFF;
- margin: 15px 0px 15px 30px;
- height: 225px;
- width: 600px;
- display: inline;
- border: solid 1px ;
-}
-.mini li {
- height: 113px;
- width: 150px;
- float: left;
- list-style: none;
- display: inline;
-}
-#footer {
- width: 920px;
- height: 40px;
- clear: both;
- color: #333;
- border: solid 1px ;
- background-image: url(/images/pointilles.gif);
- background-repeat: repeat-x;
-  /*background-attachment:fixed;*/
- background-position: top;
- text-align:left;
- padding: 5px 0px 0px 30px;
- display:inline-block;
- vertical-align:middle;
- text-align:left;
-}
+
+@import "header-footer";

@@ -2,6 +2,10 @@
 
 $black:#000000;
 $white:#FFFFFF;
+$text-color:#333;
+$dark-blue:#208d9f;
+$anchor:#1f8d9f;
+$anchor-hover:#5aa8c1;
 
 /* --- MIXINS --- */
 
@@ -17,26 +21,49 @@ $white:#FFFFFF;
   border-radius: $topleft $topright $bottomright $bottomleft;
 }
 
-@mixin box-shadow ($x: 0px, $y: 3px, $blur: 5px, $alpha: 0.5) {
-  -webkit-box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
-  -moz-box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
-  box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
-}
-
 /* --- GENERAL --- */
-
+html,
 body {
+  width:100%;
+  height:100%;
+}
+html {
+  display:table;
+}
+body {
+  display:table-cell;
+  vertical-align:middle;
   font-size:80%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight:300;
-  @media screen and (max-width:767px)
+  color: $text-color;
+/*  @media screen and (max-width:767px)
   {
     padding:0;
-  }
-  @media screen and (max-width:550px)
+  }*/
+/*  @media screen and (max-width:550px)
   {
     font-size:125%;
     line-height:120%;
+  }*/
+}
+a {
+  text-decoration: none;
+  color: $text-color;
+  &:hover {
+    text-decoration: underline;
+    color: $anchor-hover;
+  }
+  &.current {
+    color:$anchor;
   }
 }
+h1 {
+  font-size:120%;
+  font-weight:bold;
+  color:$dark-blue;
+  margin-bottom:2%;
+}
+
+
 

@@ -1,0 +1,55 @@
+div#header, div#footer {
+  background-image: url(/images/pointilles.gif);
+  background-repeat: repeat-x;
+}
+div#header {
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  background-position: bottom;
+}
+nav {
+  float: right;
+  text-align:right;
+  &#menu {
+    width: 65%;
+    max-width: 65%;
+    padding-top: 30px;
+    ul li {
+      display: inline;
+      padding-left: 1px;
+      img {
+        vertical-align: middle;
+        height: 11px;
+        max-height: 11px;
+        width: 11px;
+        width: 11px;
+      }
+    }
+  }
+  &#sub-menu {
+    float:left;
+    text-align:left;
+  }
+}
+#logo {
+  width:108px;
+  float: left;
+}
+div#footer {
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  vertical-align:middle;
+  background-position: top;
+  footer {
+    height:40px;
+    min-height:40px;
+    width:93px;
+    min-width:93px;
+    margin-left:30px;
+    background-image: url(/images/logo_brat_sigles.png);
+    background-position: 0px 6px;
+    background-repeat:no-repeat;
+  }
+}
