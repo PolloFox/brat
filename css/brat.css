@@ -376,15 +376,10 @@ div#content.content-descr #content-references ul li a:hover {
   color: #208d9f;
   text-decoration: none;
 }
-/* line 207, ../sass/brat.scss */
-div#content.content-descr #content-references ul li a:hover div.content-references-complement {
-  color: #333333;
-  cursor: default;
-}
 
-/* line 217, ../sass/brat.scss */
+/* line 213, ../sass/brat.scss */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* line 1, ../sass/_header-footer.scss */

@@ -204,10 +204,6 @@ div#content {
         a:hover {
           color:$dark-blue;
           text-decoration:none;
-          div.content-references-complement {
-            color:$text-color;
-            cursor: default;
-          }
         }
       }
     }
@@ -215,7 +211,7 @@ div#content {
 }
 
 .hidden {
-  display:none;
+  display:none !important;
 }
 
 @import "header-footer";
