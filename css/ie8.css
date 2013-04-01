@@ -1,0 +1,46 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if lte IE8]><link href="/stylesheets/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+ */
+/* line 9, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li div:first-child {
+  background-image: url(/images/logo_brat_sigles_urban_off.jpg);
+  background-position: top !important;
+}
+/* line 12, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li div:first-child.current {
+  background-image: url(/images/logo_brat_sigles_urban_on.jpg);
+}
+/* line 16, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li div.ie-2nd-sub-child {
+  margin-top: -29px;
+  margin-left: 33px;
+}
+/* line 20, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li a:hover div:first-child {
+  background-image: url(/images/logo_brat_sigles_urban_on.jpg);
+}
+/* line 23, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li.ie-2nd-child div:first-child {
+  background-image: url(/images/logo_brat_sigles_mobility_off.jpg);
+}
+/* line 25, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li.ie-2nd-child div:first-child.current {
+  background-image: url(/images/logo_brat_sigles_mobility_on.jpg);
+}
+/* line 29, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li.ie-2nd-child a:hover div:first-child {
+  background-image: url(/images/logo_brat_sigles_mobility_on.jpg);
+}
+/* line 32, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li.ie-3rd-child div:first-child {
+  background-image: url(/images/logo_brat_sigles_environment_off.jpg);
+}
+/* line 34, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li.ie-3rd-child div:first-child.current {
+  background-image: url(/images/logo_brat_sigles_environment_on.jpg);
+}
+/* line 38, ../sass/ie8.scss */
+div#content.content-descr #content-sub-menu ul li.ie-3rd-child a:hover div:first-child {
+  background-image: url(/images/logo_brat_sigles_environment_on.jpg);
+}

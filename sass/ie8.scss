@@ -1,0 +1,44 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if lte IE8]><link href="/stylesheets/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+ */
+div#content {
+  &.content-descr {
+    #content-sub-menu {
+      ul li {
+        div:first-child {
+          background-image:url(/images/logo_brat_sigles_urban_off.jpg);
+          background-position:top !important;
+          &.current {
+            background-image:url(/images/logo_brat_sigles_urban_on.jpg);
+          }
+        }
+        div.ie-2nd-sub-child {
+          margin-top: -29px;
+          margin-left:33px;
+        }
+        a:hover div:first-child {
+          background-image:url(/images/logo_brat_sigles_urban_on.jpg);
+        }
+        &.ie-2nd-child div:first-child {
+          background-image:url(/images/logo_brat_sigles_mobility_off.jpg);
+          &.current {
+            background-image:url(/images/logo_brat_sigles_mobility_on.jpg);
+          }
+        }
+        &.ie-2nd-child a:hover div:first-child {
+          background-image:url(/images/logo_brat_sigles_mobility_on.jpg);
+        }
+        &.ie-3rd-child div:first-child {
+          background-image:url(/images/logo_brat_sigles_environment_off.jpg);
+          &.current {
+            background-image:url(/images/logo_brat_sigles_environment_on.jpg);
+          }
+        }
+        &.ie-3rd-child a:hover div:first-child {
+          background-image:url(/images/logo_brat_sigles_environment_on.jpg);
+        }
+      }
+    }
+  }
+}

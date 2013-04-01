@@ -65,27 +65,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* --- COLOURS --- */
 /* --- MIXINS --- */
+/* --- FONTS --- */
 /* --- GENERAL --- */
-/* line 26, ../sass/_screen.scss */
-html,
-body {
+/* line 31, ../sass/_screen.scss */
+html, body {
   width: 100%;
   height: 100%;
 }
 
-/* line 30, ../sass/_screen.scss */
+/* line 35, ../sass/_screen.scss */
 html {
   display: table;
 }
 
-/* line 33, ../sass/_screen.scss */
+/* line 38, ../sass/_screen.scss */
 body {
   display: table-cell;
   vertical-align: middle;
-  font-size: 80%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-size: 78%;
+  font-family: 'Muli', Verdana, sans-serif;
   color: #333333;
+  line-height: 18px;
   /*  @media screen and (max-width:767px)
     {
       padding:0;
@@ -97,27 +97,33 @@ body {
     }*/
 }
 
-/* line 50, ../sass/_screen.scss */
+/* line 56, ../sass/_screen.scss */
 a {
   text-decoration: none;
   color: #333333;
 }
-/* line 53, ../sass/_screen.scss */
+/* line 59, ../sass/_screen.scss */
 a:hover {
   text-decoration: underline;
   color: #5aa8c1;
 }
-/* line 57, ../sass/_screen.scss */
+/* line 63, ../sass/_screen.scss */
 a.current {
   color: #1f8d9f;
 }
 
-/* line 61, ../sass/_screen.scss */
+/* line 67, ../sass/_screen.scss */
 h1 {
   font-size: 120%;
   font-weight: bold;
   color: #208d9f;
   margin-bottom: 2%;
+}
+
+/* line 73, ../sass/_screen.scss */
+h3 {
+  font-weight: bold;
+  margin-bottom: 0.5%;
 }
 
 /* line 4, ../sass/brat.scss */
@@ -141,32 +147,35 @@ div#content {
 }
 /* line 17, ../sass/brat.scss */
 div#content, div#content #content-text, div#content #content-illu {
-  min-height: 228px;
+  min-height: 230px;
 }
 /* line 20, ../sass/brat.scss */
 div#content #content-text, div#content #content-illu {
-  margin: 1% 2.5% 1% 1.5%;
+  margin: 0.5% 2.5% 0.5% 1.5%;
   width: 32%;
   max-width: 32%;
   float: left;
   text-align: justify;
 }
 /* line 26, ../sass/brat.scss */
-div#content #content-text span, div#content #content-illu span {
+div#content #content-text div, div#content #content-illu div {
   font-size: 80%;
+  line-height: 120%;
+  margin-top: 5px;
 }
-/* line 30, ../sass/brat.scss */
+/* line 32, ../sass/brat.scss */
 div#content #content-gallery, div#content #content-descr, div#content #content-references {
   float: right;
   width: 64%;
   max-width: 64%;
   overflow: hidden;
 }
-/* line 36, ../sass/brat.scss */
+/* line 38, ../sass/brat.scss */
 div#content #content-gallery ul li {
   display: inline;
+  zoom: 1;
 }
-/* line 38, ../sass/brat.scss */
+/* line 41, ../sass/brat.scss */
 div#content #content-gallery ul li div {
   display: inline-block;
   height: 113px;
@@ -177,150 +186,205 @@ div#content #content-gallery ul li div {
   max-width: 150px;
   overflow: hidden;
 }
-/* line 49, ../sass/brat.scss */
+/* line 52, ../sass/brat.scss */
 div#content.content-descr {
   min-height: 300px;
 }
-/* line 51, ../sass/brat.scss */
-div#content.content-descr.content-sub-menu {
-  min-height: 360px;
-}
 /* line 54, ../sass/brat.scss */
+div#content.content-descr.content-sub-menu {
+  min-height: 390px;
+}
+/* line 57, ../sass/brat.scss */
 div#content.content-descr #content-illu {
   height: 285px;
   max-height: 285px;
   overflow: hidden;
 }
-/* line 58, ../sass/brat.scss */
+/* line 61, ../sass/brat.scss */
 div#content.content-descr #content-illu img {
   height: 100%;
   width: 100%;
 }
-/* line 63, ../sass/brat.scss */
+/* line 66, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu {
   float: left;
   margin-left: 30px;
 }
-/* line 67, ../sass/brat.scss */
+/* line 70, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:first-child div:first-child {
   background-position: 0px -34px;
 }
-/* line 69, ../sass/brat.scss */
+/* line 72, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:first-child div:first-child.current {
   background-position: 0px 0px;
 }
-/* line 73, ../sass/brat.scss */
+/* line 76, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:first-child a:hover div:first-child {
   background-position: 0px 0px;
 }
-/* line 77, ../sass/brat.scss */
+/* line 80, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:nth-child(2) {
   margin-top: 10%;
 }
-/* line 79, ../sass/brat.scss */
+/* line 82, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:nth-child(2) div:first-child {
   background-position: -33px -34px;
 }
-/* line 81, ../sass/brat.scss */
+/* line 84, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:nth-child(2) div:first-child.current {
   background-position: -33px 0px;
 }
-/* line 85, ../sass/brat.scss */
+/* line 88, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:nth-child(2) a:hover div:first-child {
   background-position: -33px 0px;
 }
-/* line 89, ../sass/brat.scss */
+/* line 92, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:last-child {
   margin-top: 10%;
 }
-/* line 91, ../sass/brat.scss */
+/* line 94, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:last-child div:first-child {
   background-position: -65px -34px;
 }
-/* line 93, ../sass/brat.scss */
+/* line 96, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:last-child div:first-child.current {
   background-position: -65px 0px;
 }
-/* line 97, ../sass/brat.scss */
+/* line 100, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li:last-child a:hover div:first-child {
   background-position: -65px 0px;
 }
-/* line 101, ../sass/brat.scss */
+/* line 104, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li {
   line-height: 140%;
   font-size: 105%;
   text-transform: uppercase;
 }
-/* line 105, ../sass/brat.scss */
+/* line 108, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li div:first-child {
   display: inline-block;
   background-image: url(/images/logo_brat_sigles.png);
   background-repeat: no-repeat;
   width: 30px;
   height: 32px;
-  margin-top: -12px;
+  margin-top: -8px;
 }
-/* line 113, ../sass/brat.scss */
+/* line 116, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li a div:nth-child(2) {
   margin-top: -28px;
   margin-left: 34px;
   height: 26px;
 }
-/* line 118, ../sass/brat.scss */
+/* line 121, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li a:hover {
   color: #208d9f;
 }
-/* line 121, ../sass/brat.scss */
+/* line 124, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li a.current {
   color: #208d9f;
 }
-/* line 124, ../sass/brat.scss */
+/* line 127, ../sass/brat.scss */
 div#content.content-descr #content-sub-menu ul li ul li {
   font-size: 90%;
   text-transform: none;
   margin: 0px 0px 4px 43px !important;
 }
-/* line 132, ../sass/brat.scss */
+/* line 135, ../sass/brat.scss */
 div#content.content-descr #content-descr p, div#content.content-descr #content-descr ul li, div#content.content-descr #content-references p, div#content.content-descr #content-references ul li {
   margin: 1% 0px 1% 0px;
   line-height: 120%;
   text-align: justify;
 }
-/* line 136, ../sass/brat.scss */
+/* line 139, ../sass/brat.scss */
 div#content.content-descr #content-descr p span, div#content.content-descr #content-descr ul li span, div#content.content-descr #content-references p span, div#content.content-descr #content-references ul li span {
   color: #208d9f;
 }
-/* line 140, ../sass/brat.scss */
+/* line 143, ../sass/brat.scss */
 div#content.content-descr #content-descr ul, div#content.content-descr #content-references ul {
   display: block;
   margin-left: 18px;
   list-style: disc;
 }
-/* line 146, ../sass/brat.scss */
+/* line 149, ../sass/brat.scss */
 div#content.content-descr #content-references {
-  height: 360px;
+  height: 380px;
   overflow-y: auto;
 }
-/* line 150, ../sass/brat.scss */
+/* line 153, ../sass/brat.scss */
 div#content.content-descr #content-references ul li div {
   display: inline-block;
-}
-/* line 153, ../sass/brat.scss */
-div#content.content-descr #content-references ul li div:first-child {
-  margin-right: 3px;
-  font-weight: bold;
+  zoom: 1;
 }
 /* line 157, ../sass/brat.scss */
-div#content.content-descr #content-references ul li div:nth-child(2) {
+div#content.content-descr #content-references ul li div.content-references-year {
+  margin-right: 3px;
+  font-weight: bold;
+  width: 5%;
+}
+/* line 162, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-title {
   text-transform: uppercase;
   vertical-align: top;
-  width: 93.5%;
-  border: solid 1px;
+  width: 93%;
 }
-/* line 163, ../sass/brat.scss */
+/* line 168, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-complement {
+  width: 93%;
+  max-width: 93%;
+  padding-left: 7%;
+}
+/* line 172, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-complement div {
+  float: left;
+}
+/* line 175, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-complement div.content-references-complement-illu {
+  max-width: 10%;
+  margin-right: 2%;
+  padding-top: 1%;
+}
+/* line 179, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-complement div.content-references-complement-illu ul {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 183, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-complement div.content-references-complement-illu img {
+  width: 100%;
+  height: 10%;
+}
+/* line 188, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-complement div.content-references-complement-text {
+  width: 46%;
+  max-width: 46%;
+  margin-right: 2%;
+  padding-right: 2%;
+  border-right: solid 1px;
+}
+/* line 195, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-complement div.content-references-complement-details {
+  width: 35%;
+  max-width: 35%;
+}
+/* line 198, ../sass/brat.scss */
+div#content.content-descr #content-references ul li div.content-references-complement div.content-references-complement-details ul {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 204, ../sass/brat.scss */
 div#content.content-descr #content-references ul li a:hover {
   color: #208d9f;
   text-decoration: none;
+}
+/* line 207, ../sass/brat.scss */
+div#content.content-descr #content-references ul li a:hover div.content-references-complement {
+  color: #333333;
+  cursor: default;
+}
+
+/* line 217, ../sass/brat.scss */
+.hidden {
+  display: none;
 }
 
 /* line 1, ../sass/_header-footer.scss */
@@ -335,25 +399,28 @@ div#header {
   min-height: 60px;
   max-height: 60px;
   background-position: bottom;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-/* line 11, ../sass/_header-footer.scss */
+/* line 13, ../sass/_header-footer.scss */
 nav {
   float: right;
   text-align: right;
 }
-/* line 14, ../sass/_header-footer.scss */
+/* line 16, ../sass/_header-footer.scss */
 nav#menu {
-  width: 65%;
-  max-width: 65%;
+  width: 70%;
+  max-width: 70%;
   padding-top: 30px;
+  padding-right: 5px;
 }
-/* line 18, ../sass/_header-footer.scss */
+/* line 21, ../sass/_header-footer.scss */
 nav#menu ul li {
   display: inline;
   padding-left: 1px;
 }
-/* line 21, ../sass/_header-footer.scss */
+/* line 24, ../sass/_header-footer.scss */
 nav#menu ul li img {
   vertical-align: middle;
   height: 11px;
@@ -361,19 +428,19 @@ nav#menu ul li img {
   width: 11px;
   width: 11px;
 }
-/* line 30, ../sass/_header-footer.scss */
+/* line 33, ../sass/_header-footer.scss */
 nav#sub-menu {
   float: left;
   text-align: left;
 }
 
-/* line 35, ../sass/_header-footer.scss */
+/* line 38, ../sass/_header-footer.scss */
 #logo {
   width: 108px;
   float: left;
 }
 
-/* line 39, ../sass/_header-footer.scss */
+/* line 42, ../sass/_header-footer.scss */
 div#footer {
   height: 40px;
   min-height: 40px;
@@ -381,7 +448,7 @@ div#footer {
   vertical-align: middle;
   background-position: top;
 }
-/* line 45, ../sass/_header-footer.scss */
+/* line 48, ../sass/_header-footer.scss */
 div#footer footer {
   height: 40px;
   min-height: 40px;

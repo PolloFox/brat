@@ -1,0 +1,13 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if lt IE8]><link href="/stylesheets/ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+ */
+/* line 5, ../sass/ie7.scss */
+div#header {
+  margin-top: 30px !important;
+}
+
+/* line 12, ../sass/ie7.scss */
+a.ie-content-references-anchor div.content-references-title {
+  margin-left: 5px;
+}
