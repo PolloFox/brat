@@ -202,7 +202,7 @@ div#content {
             }
           }
         }
-        a:hover, a.current {
+        a:hover {
           color:$dark-blue;
           text-decoration:none;
         }
@@ -215,6 +215,9 @@ img.icon {
   width:18px;
   height:18px;
   vertical-align:middle;
+}
+p.double-blank-top {
+  padding-top:2%;
 }
 
 .hidden {

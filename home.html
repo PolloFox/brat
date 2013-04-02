@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>BRAT :: urbanisme &amp; am&eacute;nagement - mobilit&eacute; - environnement</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=0.666667, maximum-scale=1, user-scalable=0">
     <meta name="description" content="Bureau d'étude dans les matières d'urbanisme, d'aménagement du territoire, de la mobilité et de l'environnement"/>
     <meta name="keywords" content="brat, bureau, architecte, architecture, urbanisme, aménagement, aménagement du territoire, mobilité, environnement, bureau d'étude, cabinet, consultant, durable, construction durable, urbain"/>
@@ -27,21 +28,21 @@
   <body>
     <div id="header">
       <header>
-        <div id="logo"><a href="/" title="BRAT :: Accueil" alt="BRAT home page - accueil"><img src="images/logo_brat.gif" width="108" height="45" alt="Logo BRAT  - home page - accueil" title="Logo BRAT :: Accueil" /></a></div>
+        <div id="logo"><a href="#" title="BRAT :: Accueil" alt="BRAT home page - accueil"><img src="/images/logo_brat.gif" width="108" height="45" alt="Logo BRAT  - home page - accueil" title="Logo BRAT :: Accueil" /></a></div>
         <nav id="menu">
           <ul>
             <li><a href="#" alt="Accueil" class="current" title="Accueil">accueil</a></li>
-            <li><img class="puce" src="images/puce.gif" alt="puce" /></li>
+            <li><img class="puce" src="/images/puce.gif" alt="puce" /></li>
             <li><a href="/agrements.html" alt="Agr&eacute;ments" title="Agr&eacute;ments">agr&eacute;ments</a></li>
-            <li><img class="puce" src="images/puce.gif" alt="puce" /></li>
+            <li><img class="puce" src="/images/puce.gif" alt="puce" /></li>
             <li><a href="/team.html" alt="&Eacute;quipe" title="&Eacute;quipe">&eacute;quipe</a></li>
-            <li><img class="puce" src="images/puce.gif" alt="puce" /></li>
+            <li><img class="puce" src="/images/puce.gif" alt="puce" /></li>
             <li><a href="/references.html" alt="R&eacute;f&eacute;rences" title="R&eacute;f&eacute;rences">r&eacute;f&eacute;rences</a></li>
-            <li><img class="puce" src="images/puce.gif" alt="puce" /></li>
+            <li><img class="puce" src="/images/puce.gif" alt="puce" /></li>
             <li><a href="/jobs.html" alt="Offres d'emploi" title="Offres d'emploi">offres d'emploi</a></li>
-            <li><img class="puce" src="images/puce.gif" alt="puce" /></li>
+            <li><img class="puce" src="/images/puce.gif" alt="puce" /></li>
             <li><a href="/contact.html" alt="Contact" title="Contact">contact</a></li>
-            <li><img class="puce" src="images/puce.gif" alt="puce" /></li>
+            <li><img class="puce" src="/images/puce.gif" alt="puce" /></li>
             <li id="language_choice"><a href="#" title="Fran&ccedil;ais" alt="Fran&ccedil;ais">fr</a>&nbsp;|&nbsp;<a href="#" title="Nederlands" alt="Nederlands">nl</a></li>
           </ul>
         </nav>
@@ -159,22 +160,13 @@
           $('#slideshow-container-'+number).rsfSlideshow('nextSlide');
         }
         for(var i=0;i<arr.length;i++){
-          window.setTimeout(startSlideShow, timing, arr[i]);
+          window.setTimeout((function(param) {
+            return function() {
+              startSlideShow(param);
+            };
+          })(arr[i]), timing);
           timing = timing+5000;
         }
-        $("div#content-references a.ie-content-references-anchor").on("click", function() {
-          var current_anchor_id = $(this).attr('id');
-          $(this).toggleClass('current', $(this).next('div.content-references-complement').hasClass('hidden'));
-          $("div.content-references-complement").each(function(){
-            if($(this).prev("a.ie-content-references-anchor").attr('id') == current_anchor_id) {
-              $(this).toggleClass('hidden');
-            }
-            else {
-              $(this).addClass('hidden');
-              $(this).prev("a.ie-content-references-anchor").removeClass('current');
-            }
-          });
-        });
         $("a.gallery").colorbox();
       });
     </script>

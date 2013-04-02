@@ -373,7 +373,7 @@ div#content.content-descr #content-references ul li div.content-references-compl
   margin-left: 0;
 }
 /* line 205, ../sass/brat.scss */
-div#content.content-descr #content-references ul li a:hover, div#content.content-descr #content-references ul li a.current {
+div#content.content-descr #content-references ul li a:hover {
   color: #208d9f;
   text-decoration: none;
 }
@@ -385,7 +385,12 @@ img.icon {
   vertical-align: middle;
 }
 
-/* line 220, ../sass/brat.scss */
+/* line 219, ../sass/brat.scss */
+p.double-blank-top {
+  padding-top: 2%;
+}
+
+/* line 223, ../sass/brat.scss */
 .hidden {
   display: none !important;
 }
