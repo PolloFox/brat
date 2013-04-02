@@ -365,19 +365,27 @@ div#content.content-descr #content-references ul li div.content-references-compl
 div#content.content-descr #content-references ul li div.content-references-complement div.content-references-complement-details {
   width: 35%;
   max-width: 35%;
+  margin-top: 1%;
 }
-/* line 198, ../sass/brat.scss */
+/* line 199, ../sass/brat.scss */
 div#content.content-descr #content-references ul li div.content-references-complement div.content-references-complement-details ul {
   list-style: none;
   margin-left: 0;
 }
-/* line 204, ../sass/brat.scss */
-div#content.content-descr #content-references ul li a:hover {
+/* line 205, ../sass/brat.scss */
+div#content.content-descr #content-references ul li a:hover, div#content.content-descr #content-references ul li a.current {
   color: #208d9f;
   text-decoration: none;
 }
 
-/* line 213, ../sass/brat.scss */
+/* line 214, ../sass/brat.scss */
+img.icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+/* line 220, ../sass/brat.scss */
 .hidden {
   display: none !important;
 }

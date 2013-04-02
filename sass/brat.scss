@@ -195,19 +195,26 @@ div#content {
           div.content-references-complement-details {
             width:35%;
             max-width:35%;
+            margin-top:1%;
             ul {
               list-style:none;
               margin-left:0;
             }
           }
         }
-        a:hover {
+        a:hover, a.current {
           color:$dark-blue;
           text-decoration:none;
         }
       }
     }
   }
+}
+
+img.icon {
+  width:18px;
+  height:18px;
+  vertical-align:middle;
 }
 
 .hidden {

@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href="css/brat.css" rel="stylesheet" type="text/css"/>
+    <link href="css/colorbox.css" rel="stylesheet" type="text/css"/>
     <!--[if IE]> <link rel="stylesheet" href="/css/ie.css" type="text/css" /> <![endif]-->
     <!--[if lt IE 9]> <link rel="stylesheet" href="/css/ie8.css" type="text/css" /> <![endif]-->
     <!--[if lt IE 8]> <link rel="stylesheet" href="/css/ie7.css" type="text/css" /> <![endif]-->
@@ -20,6 +21,7 @@
 <!--    <script type="text/javascript" src="scripts/css3-mediaqueries.js"></script>-->
     <script type="text/javascript" src="scripts/jquery.rs.slideshow.min.js"></script>
   <!--  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>-->
+    <script type="text/javascript" src="scripts/jquery.colorbox-min.js"></script>
   </head>
 
   <body>
@@ -56,60 +58,76 @@
       <div id="content-gallery">
         <ul class="mini">
           <li>
-            <div id="slideshow-container-1">
-              <div class="slide-container">
-                <img src="images/mini.jpg" alt="mini" title="mini"/>
+            <a href="/images/mini.jpg" class="gallery" title="Mini map" rel="references">
+              <div id="slideshow-container-1">
+                <div class="slide-container">
+                  <img src="/images/mini.jpg" alt="mini" title="mini"/>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div id="slideshow-container-2">
-              <div class="slide-container">
-                <img src="images/mini.jpg" alt="mini" title="mini"/>
+            <a href="/images/mini.jpg" class="gallery" title="Mini map 2" rel="references">
+              <div id="slideshow-container-2">
+                <div class="slide-container">
+                  <img src="images/mini.jpg" alt="mini" title="mini"/>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div id="slideshow-container-3">
-              <div class="slide-container">
-                <img src="images/mini.jpg" alt="mini" title="mini"/>
+            <a href="/images/mini.jpg" class="gallery" title="Mini map 3" rel="references">
+              <div id="slideshow-container-3">
+                <div class="slide-container">
+                  <img src="/images/mini.jpg" alt="mini" title="mini"/>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div id="slideshow-container-4">
-              <div class="slide-container">
-                <img src="images/mini.jpg" alt="mini" title="mini"/>
+            <a href="/images/mini.jpg" class="gallery" rel="references">
+              <div id="slideshow-container-4">
+                <div class="slide-container">
+                  <img src="/images/mini.jpg" alt="mini" title="mini"/>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div id="slideshow-container-5">
-              <div class="slide-container">
-                <img src="images/mini.jpg" alt="mini" title="mini"/>
+            <a href="/images/mini.jpg" class="gallery" rel="references">
+              <div id="slideshow-container-5">
+                <div class="slide-container">
+                  <img src="/images/mini.jpg" alt="mini" title="mini"/>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div id="slideshow-container-6">
-              <div class="slide-container">
-                <img src="images/mini.jpg" alt="mini" title="mini"/>
+            <a href="/images/mini.jpg" class="gallery" rel="references">
+              <div id="slideshow-container-6">
+                <div class="slide-container">
+                  <img src="/images/mini.jpg" alt="mini" title="mini"/>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div id="slideshow-container-7">
-              <div class="slide-container">
-                <img src="images/mini.jpg" alt="mini" title="mini"/>
+            <a href="/images/mini.jpg" class="gallery" rel="references">
+              <div id="slideshow-container-7">
+                <div class="slide-container">
+                  <img src="/images/mini.jpg" alt="mini" title="mini"/>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
           <li>
-            <div id="slideshow-container-8">
-              <div class="slide-container">
-                <img src="images/mini.jpg" alt="mini" title="mini"/>
+            <a href="/images/mini.jpg" class="gallery" rel="references">
+              <div id="slideshow-container-8">
+                <div class="slide-container">
+                  <img src="/images/mini.jpg" alt="mini" title="mini"/>
+                </div>
               </div>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -132,24 +150,32 @@
               array[current] = array[top];
               array[top] = tmp;
           }
+
           return array.slice(-n);
         }
         randomFrom(arr, 8);
-        function startSlideShow (number) {
+        function startSlideShow(number) {
           $('#slideshow-container-'+number).rsfSlideshow('startShow');
           $('#slideshow-container-'+number).rsfSlideshow('nextSlide');
         }
         for(var i=0;i<arr.length;i++){
-          window.setTimeout(
-                            (function(param) {
-                              return function() {
-                                startSlideShow(param);
-                              };
-                            }
-                            )(arr[i]) , timing
-                          );
+          window.setTimeout(startSlideShow, timing, arr[i]);
           timing = timing+5000;
         }
+        $("div#content-references a.ie-content-references-anchor").on("click", function() {
+          var current_anchor_id = $(this).attr('id');
+          $(this).toggleClass('current', $(this).next('div.content-references-complement').hasClass('hidden'));
+          $("div.content-references-complement").each(function(){
+            if($(this).prev("a.ie-content-references-anchor").attr('id') == current_anchor_id) {
+              $(this).toggleClass('hidden');
+            }
+            else {
+              $(this).addClass('hidden');
+              $(this).prev("a.ie-content-references-anchor").removeClass('current');
+            }
+          });
+        });
+        $("a.gallery").colorbox();
       });
     </script>
   </body>

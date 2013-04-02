@@ -67,30 +67,46 @@
     </div>
     <script type="text/javascript" src="scripts/slideshow-slides-lists.js"></script>
     <script type="text/javascript">
-      var arr = [1,2,3,4,5,6,7,8];
-      var timing = 0;
-      function randomFrom(array, n) {
-        var at = 0;
-        var tmp, current, top = array.length;
+      $( document ).ready(function() {
+        $("div#content-gallery a").colorbox();
+        $("div#content-references a").on("click", function() {
+          var current_anchor_id = $(this).attr('id');
+          $(this).toggleClass('current', $(this).next('div.content-references-complement').hasClass('hidden'));
+          $("div.content-references-complement").each(function(){
+            if($(this).prev("a").attr('id') == current_anchor_id) {
+              $(this).toggleClass('hidden');
+            }
+            else {
+              $(this).addClass('hidden');
+              $(this).prev('a').removeClass('current');
+            }
+          });
+        });
+        var arr = [1,2,3,4,5,6,7,8];
+        var timing = 0;
+        function randomFrom(array, n) {
+          var at = 0;
+          var tmp, current, top = array.length;
 
-        if(top) while(--top && at++ < n) {
-            current = Math.floor(Math.random() * (top - 1));
-            tmp = array[current];
-            array[current] = array[top];
-            array[top] = tmp;
+          if(top) while(--top && at++ < n) {
+              current = Math.floor(Math.random() * (top - 1));
+              tmp = array[current];
+              array[current] = array[top];
+              array[top] = tmp;
+          }
+
+          return array.slice(-n);
         }
-
-        return array.slice(-n);
-      }
-      randomFrom(arr, 8);
-      function startSlideShow(number) {
-        $('#slideshow-container-'+number).rsfSlideshow('startShow');
-        $('#slideshow-container-'+number).rsfSlideshow('nextSlide');
-      }
-      for(var i=0;i<arr.length;i++){
-        window.setTimeout(startSlideShow, timing, arr[i]);
-        timing = timing+5000;
-      }
+        randomFrom(arr, 8);
+        function startSlideShow(number) {
+          $('#slideshow-container-'+number).rsfSlideshow('startShow');
+          $('#slideshow-container-'+number).rsfSlideshow('nextSlide');
+        }
+        for(var i=0;i<arr.length;i++){
+          window.setTimeout(startSlideShow, timing, arr[i]);
+          timing = timing+5000;
+        }
+      });
     </script>
   </body>
 </html>
