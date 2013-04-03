@@ -88,7 +88,7 @@
               <div class="content-references-year">2002</div>
               <div class="content-references-title">Am&eacute;nagement du Parc R&eacute;gional Memling-Gheude&nbsp;: Analyse urbanistique ax&eacute;e sur la sociologie</div>
             </a>
-            <div class="content-references-complement hidden">
+            <div class="content-references-complement" style="display: none;">
               <div class="content-references-complement-illu">
                 <ul>
                   <li><a href="/images/references_illu_1.jpg" class="gallery" title="Parc R&eacute;gional Memling-Gheude&nbsp;" rel="reference-1"><img src="/images/references_illu_1.jpg" title="Parc R&eacute;gional Memling-Gheude&nbsp;" alt="Parc R&eacute;gional Memling-Gheude&nbsp;"/></a></li>
@@ -124,7 +124,7 @@
               <div class="content-references-year">2002</div>
               <div class="content-references-title">&Eacute;laboration des dossiers d'abrogation des PPAS 3 et 23 de la Commune d'&Eacute;vere</div>
             </a>
-            <div class="content-references-complement hidden">
+            <div class="content-references-complement" style="display: none;">
               <div class="content-references-complement-illu">
                 <ul>
                   <li><a href="/images/references_illu_1.jpg" class="gallery" title="Map 1" rel="reference-2"><img src="/images/references_illu_1.jpg" title="" alt=""/></a></li>
@@ -160,7 +160,7 @@
               <div class="content-references-year">2002</div>
               <div class="content-references-title">Plan d'Am&eacute;nagement de la place de la gare &agrave; Berchem-Ste-Agathe</div>
             </a>
-            <div class="content-references-complement hidden">
+            <div class="content-references-complement" style="display: none;">
               <div class="content-references-complement-illu">
                 <ul>
                   <li><a href="/images/references_illu_1.jpg" class="gallery" title="Map 1" rel="reference-3"><img src="/images/references_illu_1.jpg" title="" alt=""/></a></li>
@@ -196,7 +196,7 @@
               <div class="content-references-year">2001</div>
               <div class="content-references-title">Am&eacute;nagements et Mobilit&eacute; dans les quartiers &eacute;conomiques de la R&eacute;gion de Bruxelles-Capitale: Bonnes pratiques et recommendations</div>
             </a>
-            <div class="content-references-complement hidden">
+            <div class="content-references-complement" style="display: none;">
               <div class="content-references-complement-illu">
                 <ul>
                   <li><a href="/images/references_illu_1.jpg" class="gallery" title="Map 1" rel="reference-4"><img src="/images/references_illu_1.jpg" title="" alt=""/></a></li>
@@ -233,13 +233,13 @@
         $( document ).ready(function() {
           $("div#content-references a.ie-content-references-anchor").on("click", function() {
             var current_anchor_id = $(this).attr('id');
-            $(this).toggleClass('current', $(this).next('div.content-references-complement').hasClass('hidden'));
+            $(this).toggleClass('current', $(this).next('div.content-references-complement:hidden'));
             $("div.content-references-complement").each(function(){
               if($(this).prev("a.ie-content-references-anchor").attr('id') == current_anchor_id) {
-                $(this).toggleClass('hidden');
+                $(this).toggle('400', 'linear');
               }
               else {
-                $(this).addClass('hidden');
+                $(this).hide('fast', 'linear');
                 $(this).prev("a.ie-content-references-anchor").removeClass('current');
               }
             });
