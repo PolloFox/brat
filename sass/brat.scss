@@ -52,7 +52,7 @@ div#content {
   &.content-descr {
     min-height:300px;
     &.content-sub-menu {
-      min-height:390px;
+      min-height:520px;
     }
     #content-illu {
       height:285px;
@@ -147,7 +147,7 @@ div#content {
       }
     }
     #content-references {
-      height:380px;
+      height:520px;
       overflow-y:auto;
       ul li {
         div {
@@ -208,6 +208,11 @@ div#content {
         }
       }
     }
+    ul li span.focused {
+      font-weight:bold;
+      color:$black !important;
+    }
+
   }
 }
 
@@ -218,6 +223,10 @@ img.icon {
 }
 p.double-blank-top {
   padding-top:2%;
+}
+
+p.subtitle {
+  color:$dark-blue;
 }
 
 .hidden {

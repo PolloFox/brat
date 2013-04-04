@@ -157,6 +157,11 @@
         randomFrom(arr, 8);
         function startSlideShow(number) {
           $('#slideshow-container-'+number).rsfSlideshow('startShow');
+          $('#slideshow-container-'+number).bind('rsImageReady', function(){
+            $(this).parent('a').attr('href', eval('slides_list_'+number)[$(this).rsfSlideshow('currentSlideKey')].big_href);
+            $(this).parent('a').attr('title', eval('slides_list_'+number)[$(this).rsfSlideshow('currentSlideKey')].title);
+            $(this).parent('a').attr('alt', eval('slides_list_'+number)[$(this).rsfSlideshow('currentSlideKey')].alt);
+          });
           $('#slideshow-container-'+number).rsfSlideshow('nextSlide');
         }
         for(var i=0;i<arr.length;i++){

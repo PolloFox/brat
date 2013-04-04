@@ -2,9 +2,15 @@
 var slides_list_1 = Array(
     {
         url: '/images/mini.jpg',
+        big_href: '/images/mini.jpg',
+        alt: 'Mini map',
+        title: 'Mini map',
     },
     {
         url: '/images/mini_grey.jpg',
+        big_href: '/images/mini_grey.jpg',
+        alt: 'Mini map grey',
+        title: 'Mini map grey',
     }
 );
 
@@ -12,9 +18,15 @@ var slides_list_1 = Array(
 var slides_list_2 = Array(
   {
     url: '/images/mini.jpg',
+    big_href: '/images/mini.jpg',
+    alt: 'Mini map',
+    title: 'Mini map',
   },
   {
     url: '/images/mini_grey.jpg',
+    big_href: '/images/mini_grey.jpg',
+    alt: 'Mini map grey',
+    title: 'Mini map grey',
   }
 );
 
@@ -22,9 +34,15 @@ var slides_list_2 = Array(
 var slides_list_3 = Array(
   {
     url: '/images/mini.jpg',
+    big_href: '/images/mini.jpg',
+    alt: 'Mini map',
+    title: 'Mini map',
   },
   {
     url: '/images/mini_grey.jpg',
+    big_href: '/images/mini_grey.jpg',
+    alt: 'Mini map grey',
+    title: 'Mini map grey',
   }
 );
 
@@ -32,9 +50,15 @@ var slides_list_3 = Array(
 var slides_list_4 = Array(
   {
     url: '/images/mini.jpg',
+    big_href: '/images/mini.jpg',
+    alt: 'Mini map',
+    title: 'Mini map',
   },
   {
     url: '/images/mini_grey.jpg',
+    big_href: '/images/mini_grey.jpg',
+    alt: 'Mini map grey',
+    title: 'Mini map grey',
   }
 );
 
@@ -42,9 +66,15 @@ var slides_list_4 = Array(
 var slides_list_5 = Array(
   {
     url: '/images/mini.jpg',
+    big_href: '/images/mini.jpg',
+    alt: 'Mini map',
+    title: 'Mini map',
   },
   {
     url: '/images/mini_grey.jpg',
+    big_href: '/images/mini_grey.jpg',
+    alt: 'Mini map grey',
+    title: 'Mini map grey',
   }
 );
 
@@ -52,9 +82,15 @@ var slides_list_5 = Array(
 var slides_list_6 = Array(
   {
     url: '/images/mini.jpg',
+    big_href: '/images/mini.jpg',
+    alt: 'Mini map',
+    title: 'Mini map',
   },
   {
     url: '/images/mini_grey.jpg',
+    big_href: '/images/mini_grey.jpg',
+    alt: 'Mini map grey',
+    title: 'Mini map grey',
   }
 );
 
@@ -62,9 +98,15 @@ var slides_list_6 = Array(
 var slides_list_7 = Array(
   {
     url: '/images/mini.jpg',
+    big_href: '/images/mini.jpg',
+    alt: 'Mini map',
+    title: 'Mini map',
   },
   {
     url: '/images/mini_grey.jpg',
+    big_href: '/images/mini_grey.jpg',
+    alt: 'Mini map grey',
+    title: 'Mini map grey',
   }
 );
 
@@ -72,9 +114,15 @@ var slides_list_7 = Array(
 var slides_list_8 = Array(
   {
     url: '/images/mini.jpg',
+    big_href: '/images/mini.jpg',
+    alt: 'Mini map',
+    title: 'Mini map',
   },
   {
     url: '/images/mini_grey.jpg',
+    big_href: '/images/mini_grey.jpg',
+    alt: 'Mini map grey',
+    title: 'Mini map grey',
   }
 );
 
