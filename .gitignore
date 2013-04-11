@@ -1,0 +1,7 @@
+*~
+*.*~
+*.kdev4
+*swp
+.kdev4/*
+.sass-cache/*
+.gitignore
