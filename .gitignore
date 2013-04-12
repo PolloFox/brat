@@ -5,3 +5,6 @@
 .kdev4/*
 .sass-cache/*
 .gitignore
+./.gitignore
+web/.sass-cache/*
+vendor/*
