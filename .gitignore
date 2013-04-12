@@ -8,3 +8,4 @@
 ./.gitignore
 web/.sass-cache/*
 vendor/*
+composer.lock
