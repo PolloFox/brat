@@ -183,10 +183,6 @@ div#content #content-gallery ul li div {
 div#content.content-descr {
   min-height: 300px;
 }
-/* line 54, ../sass/brat.scss */
-div#content.content-descr.content-sub-menu {
-  min-height: 520px;
-}
 /* line 57, ../sass/brat.scss */
 div#content.content-descr #content-illu {
   height: 285px;
@@ -295,7 +291,7 @@ div#content.content-descr #content-descr ul, div#content.content-descr #content-
 }
 /* line 145, ../sass/brat.scss */
 div#content.content-descr #content-references {
-  height: 520px;
+  height: 464px;
   overflow-y: auto;
 }
 /* line 149, ../sass/brat.scss */
@@ -408,7 +404,7 @@ div#header {
   background-position: bottom;
   font-size: 14px;
   letter-spacing: 1px;
-  margin-top: 5% !important;
+  margin-top: 4% !important;
 }
 
 /* line 14, ../sass/_header-footer.scss */
@@ -450,20 +446,21 @@ nav#sub-menu {
 
 /* line 43, ../sass/_header-footer.scss */
 div#footer {
-  height: 40px;
-  min-height: 40px;
-  max-height: 40px;
   vertical-align: middle;
   background-position: top;
 }
-/* line 49, ../sass/_header-footer.scss */
+/* line 46, ../sass/_header-footer.scss */
 div#footer footer {
-  height: 40px;
-  min-height: 40px;
-  width: 93px;
-  min-width: 93px;
-  margin-left: 30px;
-  background-image: url(/images/logo_brat_sigles.png);
-  background-position: 0px 6px;
-  background-repeat: no-repeat;
+  position: relative;
+  top: 8px;
+  margin-left: 10px;
+  display: inline;
+}
+/* line 51, ../sass/_header-footer.scss */
+div#footer footer a img {
+  vertical-align: middle;
+}
+/* line 54, ../sass/_header-footer.scss */
+div#footer footer div#footer-text {
+  display: inline;
 }

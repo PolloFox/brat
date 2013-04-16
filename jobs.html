@@ -61,7 +61,24 @@
       </div>
     </div>
     <div id="footer">
-      <footer></footer>
+      <footer>
+        <a href="/references/urbanisme/110_plans_developpement.html" title="Urbanisme & Am&eacute;nagement" alt="Urbanisme & Am&eacute;nagement"><img src="/images/logo_brat_sigles_urban_on.jpg"/></a>
+        <a href="/references/mobilite/210_plans_mobilite.html" title="Mobilit&eacute;" alt="Mobilit&eacute;"><img src="/images/logo_brat_sigles_mobility_on.jpg"/></a>
+        <a href="/references/environnement/310_gestion_environnement.html" title="Environnement" alt="Environnement"><img src="/images/logo_brat_sigles_environment_on.jpg"/></a>
+        &nbsp;&nbsp;<div id="footer-text"></div>
+      </footer>
     </div>
   </body>
+  <script type="text/javascript">
+     $( document ).ready(function() {
+       $("footer a").hover(
+         function() {
+           $("footer div#footer-text").text($(this).attr("title"));
+         },
+         function() {
+           $("footer div#footer-text").text('');
+         }
+       );
+     });
+  </script>
 </html>

@@ -9,7 +9,7 @@ div#header {
   background-position: bottom;
   font-size:14px;
   letter-spacing:1px;
-  margin-top:5% !important;
+  margin-top:4% !important;
 }
 nav {
   float: right;
@@ -41,19 +41,18 @@ nav {
   float: left;
 }
 div#footer {
-  height: 40px;
-  min-height: 40px;
-  max-height: 40px;
   vertical-align:middle;
   background-position: top;
   footer {
-    height:40px;
-    min-height:40px;
-    width:93px;
-    min-width:93px;
-    margin-left:30px;
-    background-image: url(/images/logo_brat_sigles.png);
-    background-position: 0px 6px;
-    background-repeat:no-repeat;
+    position:relative;
+    top:8px;
+    margin-left:10px;
+    display:inline;
+    a img {
+      vertical-align:middle;
+    }
+    div#footer-text {
+      display:inline;
+    }
   }
 }
