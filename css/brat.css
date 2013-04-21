@@ -67,12 +67,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* --- MIXINS --- */
 /* --- FONTS --- */
 /* --- GENERAL --- */
-/* line 31, ../sass/_screen.scss */
+/* line 32, ../sass/_screen.scss */
 html, body {
   width: 100%;
 }
 
-/* line 34, ../sass/_screen.scss */
+/* line 35, ../sass/_screen.scss */
 body {
   vertical-align: middle;
   font-size: 78%;
@@ -90,22 +90,22 @@ body {
     }*/
 }
 
-/* line 51, ../sass/_screen.scss */
+/* line 52, ../sass/_screen.scss */
 a {
   text-decoration: none;
   color: #333333;
 }
-/* line 54, ../sass/_screen.scss */
+/* line 55, ../sass/_screen.scss */
 a:hover {
   text-decoration: underline;
   color: #5aa8c1;
 }
-/* line 58, ../sass/_screen.scss */
+/* line 59, ../sass/_screen.scss */
 a.current {
   color: #1f8d9f;
 }
 
-/* line 62, ../sass/_screen.scss */
+/* line 63, ../sass/_screen.scss */
 h1 {
   font-size: 120%;
   font-weight: bold;
@@ -113,7 +113,7 @@ h1 {
   margin-bottom: 2%;
 }
 
-/* line 68, ../sass/_screen.scss */
+/* line 69, ../sass/_screen.scss */
 h2, h3 {
   font-weight: bold;
   margin-bottom: 0.5%;
@@ -181,7 +181,11 @@ div#content #content-gallery ul li div {
 }
 /* line 52, ../sass/brat.scss */
 div#content.content-descr {
-  min-height: 300px;
+  min-height: 360px;
+}
+/* line 54, ../sass/brat.scss */
+div#content.content-descr.content-sub-menu {
+  min-height: 464px;
 }
 /* line 57, ../sass/brat.scss */
 div#content.content-descr #content-illu {
@@ -380,23 +384,30 @@ p.double-blank-top {
   padding-top: 2%;
 }
 
-/* line 225, ../sass/brat.scss */
+/* line 226, ../sass/brat.scss */
+p.social img {
+  margin-top: -1px;
+  vertical-align: middle;
+}
+
+/* line 232, ../sass/brat.scss */
 p.subtitle {
   color: #208d9f;
 }
 
-/* line 229, ../sass/brat.scss */
+/* line 236, ../sass/brat.scss */
 .hidden {
   display: none !important;
 }
 
 /* line 1, ../sass/_header-footer.scss */
 div#header, div#footer {
-  background-image: url(/images/pointilles.gif);
+  background-image: url("/images/pointilles.gif");
   background-repeat: repeat-x;
+  min-height: 6px;
 }
 
-/* line 5, ../sass/_header-footer.scss */
+/* line 6, ../sass/_header-footer.scss */
 div#header {
   height: 60px;
   min-height: 60px;
@@ -407,24 +418,24 @@ div#header {
   margin-top: 4% !important;
 }
 
-/* line 14, ../sass/_header-footer.scss */
+/* line 15, ../sass/_header-footer.scss */
 nav {
   float: right;
   text-align: right;
 }
-/* line 17, ../sass/_header-footer.scss */
+/* line 18, ../sass/_header-footer.scss */
 nav#menu {
   width: 70%;
   max-width: 70%;
   padding-top: 30px;
   padding-right: 5px;
 }
-/* line 22, ../sass/_header-footer.scss */
+/* line 23, ../sass/_header-footer.scss */
 nav#menu ul li {
   display: inline;
   padding-left: 1px;
 }
-/* line 25, ../sass/_header-footer.scss */
+/* line 26, ../sass/_header-footer.scss */
 nav#menu ul li img {
   vertical-align: middle;
   height: 11px;
@@ -432,35 +443,42 @@ nav#menu ul li img {
   width: 11px;
   width: 11px;
 }
-/* line 34, ../sass/_header-footer.scss */
+/* line 35, ../sass/_header-footer.scss */
 nav#sub-menu {
   float: left;
   text-align: left;
 }
 
-/* line 39, ../sass/_header-footer.scss */
+/* line 40, ../sass/_header-footer.scss */
 #logo {
   width: 108px;
   float: left;
 }
 
-/* line 43, ../sass/_header-footer.scss */
+/* line 44, ../sass/_header-footer.scss */
 div#footer {
   vertical-align: middle;
   background-position: top;
 }
-/* line 46, ../sass/_header-footer.scss */
+/* line 47, ../sass/_header-footer.scss */
 div#footer footer {
   position: relative;
   top: 8px;
   margin-left: 10px;
   display: inline;
 }
-/* line 51, ../sass/_header-footer.scss */
+/* line 52, ../sass/_header-footer.scss */
 div#footer footer a img {
   vertical-align: middle;
 }
-/* line 54, ../sass/_header-footer.scss */
+/* line 55, ../sass/_header-footer.scss */
 div#footer footer div#footer-text {
   display: inline;
+}
+
+/* line 60, ../sass/_header-footer.scss */
+li#language_choice a {
+  background-color: #dddddd;
+  padding-left: 3px;
+  padding-right: 3px;
 }

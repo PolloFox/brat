@@ -50,9 +50,9 @@ div#content {
     }
   }
   &.content-descr {
-    min-height:300px;
+    min-height:360px;
     &.content-sub-menu {
-//      min-height:520px;
+      min-height:464px;
     }
     #content-illu {
       height:285px;
@@ -220,6 +220,13 @@ img.icon {
 }
 p.double-blank-top {
   padding-top:2%;
+}
+
+p.social {
+  img {
+    margin-top:-1px;
+    vertical-align:middle;
+  }
 }
 
 p.subtitle {

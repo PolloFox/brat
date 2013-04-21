@@ -1,6 +1,7 @@
 div#header, div#footer {
-  background-image: url(/images/pointilles.gif);
+  background-image: url('/images/pointilles.gif');
   background-repeat: repeat-x;
+  min-height: 6px;
 }
 div#header {
   height: 60px;
@@ -55,4 +56,9 @@ div#footer {
       display:inline;
     }
   }
+}
+li#language_choice a {
+  background-color:$light-grey;
+  padding-left:3px;
+  padding-right:3px;
 }
