@@ -1,0 +1,11 @@
+html {
+  display:table;
+}
+
+body div {
+  margin: auto;
+  *position: absolute;
+  top: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}

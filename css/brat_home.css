@@ -1,0 +1,13 @@
+/* line 1, ../sass/brat_home.scss */
+html {
+  display: table;
+}
+
+/* line 5, ../sass/brat_home.scss */
+body div {
+  margin: auto;
+  *position: absolute;
+  top: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
