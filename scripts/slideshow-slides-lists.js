@@ -7,16 +7,16 @@ var slides_list_1 = Array(
         title: 'Etude de volumes',
     },
     {
-        url: '/images/09_mini.jpg',
-        big_href: '/images/09_big.jpg',
-        alt: 'Photomontage',
-        title: 'Photomontage',
+        url: '/images/03_mini.jpg',
+        big_href: '/images/03_big.jpg',
+        alt: 'Etude d&#145;ombre',
+        title: 'Etude d&#145;ombre',
     },
     {
-        url: '/images/10_mini.jpg',
-        big_href: '/images/10_big.jpg',
-        alt: 'Relevé patrimonial',
-        title: 'Relevé patrimonial',
+        url: '/images/07_mini.jpg',
+        big_href: '/images/07_big.jpg',
+        alt: 'Etude de volumes',
+        title: 'Etude de volumes',
     },
     {
         url: '/images/11_mini.jpg',
@@ -43,8 +43,8 @@ var slides_list_2 = Array(
   {
     url: '/images/13_mini.jpg',
     big_href: '/images/13_big.jpg',
-    alt: 'Analyse d ambiance',
-    title: 'Analyse d ambiance',
+    alt: 'Analyse d&#145;ambiance',
+    title: 'Analyse d&#145;ambiance',
   },
   {
     url: '/images/14_mini.jpg',
@@ -57,10 +57,10 @@ var slides_list_2 = Array(
 //    Array of slides for the third image
 var slides_list_3 = Array(
   {
-    url: '/images/03_mini.jpg',
-    big_href: '/images/03_big.jpg',
-    alt: 'Etude d ombre',
-    title: 'Etude d ombre',
+    url: '/images/09_mini.jpg',
+    big_href: '/images/09_big.jpg',
+    alt: 'Photomontage',
+    title: 'Photomontage',
   },
   {
     url: '/images/15_mini.jpg',
@@ -157,16 +157,16 @@ var slides_list_6 = Array(
 //    Array of slides for the seventh image
 var slides_list_7 = Array(
   {
-    url: '/images/07_mini.jpg',
-    big_href: '/images/07_big.jpg',
-    alt: 'Etude de volumes',
-    title: 'Etude de volumes',
+    url: '/images/10_mini.jpg',
+    big_href: '/images/10_big.jpg',
+    alt: 'Relevé patrimonial',
+    title: 'Relevé patrimonial',
   },
   {
     url: '/images/25_mini.jpg',
     big_href: '/images/25_big.jpg',
-    alt: 'Plan d affectation',
-    title: 'Plan d affectation',
+    alt: 'Plan d&#145;affectation',
+    title: 'Plan d&#145;affectation',
   },
   {
     url: '/images/26_mini.jpg',

@@ -15,7 +15,7 @@ div#content {
   margin-top:16px !important;
   margin-bottom:20px !important;
   &, #content-text, #content-illu {
-    min-height:230px;
+    min-height:280px;
   }
   #content-text, #content-illu {
     margin: 0.5% 2.5% 0.5% 1.5%;
@@ -145,6 +145,10 @@ div#content {
     #content-references {
       height:464px;
       overflow-y:auto;
+      h4 {
+        margin-left:16px;
+        color:$dark_blue;
+      }
       ul li {
         div {
           display:inline-block;
