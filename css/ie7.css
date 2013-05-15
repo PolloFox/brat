@@ -11,3 +11,12 @@ div#header {
 a.ie-content-references-anchor div.content-references-title {
   margin-left: 5px;
 }
+
+/* line 16, ../sass/ie7.scss */
+body div.container {
+  text-align: left;
+}
+/* line 18, ../sass/ie7.scss */
+body div.container div#language_choice {
+  width: 220px;
+}

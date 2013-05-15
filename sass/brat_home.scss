@@ -1,11 +1,14 @@
-html {
-  display:table;
-}
-
-body div {
-  margin: auto;
-  *position: absolute;
-  top: 50%;
-  display: table-cell;
-  vertical-align: middle;
+body {
+  div.container {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px; /*set to a negative number 1/2 of your height*/
+    margin-left: -175px; /*set to a negative number 1/2 of your width*/
+    text-align: center;
+  }
+  div#language_choice {
+    padding-right:8px;
+    font-size:1.1em;
+  }
 }

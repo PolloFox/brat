@@ -12,3 +12,11 @@ div#header {
 a.ie-content-references-anchor div.content-references-title {
   margin-left:5px;
 }
+body {
+  div.container {
+    text-align:left;
+    div#language_choice {
+      width:220px;
+    }
+  }
+}

@@ -1,13 +1,16 @@
-/* line 1, ../sass/brat_home.scss */
-html {
-  display: table;
-}
-
-/* line 5, ../sass/brat_home.scss */
-body div {
-  margin: auto;
-  *position: absolute;
+/* line 2, ../sass/brat_home.scss */
+body div.container {
+  position: absolute;
   top: 50%;
-  display: table-cell;
-  vertical-align: middle;
+  left: 50%;
+  margin-top: -150px;
+  /*set to a negative number 1/2 of your height*/
+  margin-left: -175px;
+  /*set to a negative number 1/2 of your width*/
+  text-align: center;
+}
+/* line 10, ../sass/brat_home.scss */
+body div#language_choice {
+  padding-right: 8px;
+  font-size: 1.1em;
 }
