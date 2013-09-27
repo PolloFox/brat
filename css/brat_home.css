@@ -1,16 +1,203 @@
-/* line 2, ../sass/brat_home.scss */
-body div.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -150px;
-  /*set to a negative number 1/2 of your height*/
-  margin-left: -175px;
-  /*set to a negative number 1/2 of your width*/
-  text-align: center;
+/* line 17, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
-/* line 10, ../sass/brat_home.scss */
+
+/* line 22, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../lib/gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* --- COLOURS --- */
+/* --- MIXINS --- */
+/* --- FONTS --- */
+/* --- GENERAL --- */
+/* line 32, ../sass/_screen.scss */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 41, ../sass/_screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 45, ../sass/_screen.scss */
+body {
+  vertical-align: middle;
+  font-size: 0.78em;
+  font-family: 'Muli', Verdana, sans-serif;
+  color: #333333;
+  line-height: 1.125em;
+}
+@media screen and (max-width: 550px) {
+  /* line 45, ../sass/_screen.scss */
+  body {
+    font-size: 1.3em;
+    line-height: 1.2em;
+  }
+}
+
+/* line 57, ../sass/_screen.scss */
+a {
+  text-decoration: none;
+  color: #333333;
+}
+/* line 60, ../sass/_screen.scss */
+a:hover {
+  text-decoration: underline;
+  color: #5aa8c1;
+}
+/* line 64, ../sass/_screen.scss */
+a.current {
+  color: #1f8d9f;
+}
+
+/* line 68, ../sass/_screen.scss */
+h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #208d9f;
+  margin-bottom: 2%;
+}
+
+/* line 74, ../sass/_screen.scss */
+h2, h3 {
+  font-weight: bold;
+  margin-bottom: 0.5%;
+}
+
+/* line 5, ../sass/brat_home.scss */
+body div.container {
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  max-width: 229px;
+  /* Original width of the logo image */
+  margin: auto;
+}
+/* line 12, ../sass/brat_home.scss */
+body div.container img {
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 35%;
+}
+@media screen and (max-height: 480px) {
+  /* line 12, ../sass/brat_home.scss */
+  body div.container img {
+    top: 20%;
+  }
+}
+@media screen and (max-height: 340px) {
+  /* line 12, ../sass/brat_home.scss */
+  body div.container img {
+    top: 5%;
+  }
+}
+/* line 25, ../sass/brat_home.scss */
 body div#language_choice {
-  padding-right: 8px;
-  font-size: 1.1em;
+  font-size: 110%;
+  position: relative;
+  right: 6%;
+  top: 40%;
+  margin: auto;
+  text-align: right;
+}
+@media screen and (max-width: 180px) {
+  /* line 25, ../sass/brat_home.scss */
+  body div#language_choice {
+    font-size: 75%;
+  }
+}
+@media screen and (max-width: 60px) {
+  /* line 25, ../sass/brat_home.scss */
+  body div#language_choice {
+    font-size: 50%;
+  }
+}
+@media screen and (max-height: 480px) {
+  /* line 25, ../sass/brat_home.scss */
+  body div#language_choice {
+    top: 25%;
+  }
+}
+@media screen and (max-height: 340px) {
+  /* line 25, ../sass/brat_home.scss */
+  body div#language_choice {
+    top: 5%;
+  }
+}
+/* line 44, ../sass/brat_home.scss */
+body div#language_choice ul li {
+  display: inline-block;
+}
+/* line 47, ../sass/brat_home.scss */
+body div#language_choice ul li a {
+  display: inline-block;
+  background-color: #dddddd;
+  padding: 3px;
 }

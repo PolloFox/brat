@@ -68,52 +68,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* --- FONTS --- */
 /* --- GENERAL --- */
 /* line 32, ../sass/_screen.scss */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 41, ../sass/_screen.scss */
 html, body {
   width: 100%;
+  height: 100%;
 }
 
-/* line 35, ../sass/_screen.scss */
+/* line 45, ../sass/_screen.scss */
 body {
   vertical-align: middle;
-  font-size: 78%;
+  font-size: 0.78em;
   font-family: 'Muli', Verdana, sans-serif;
   color: #333333;
-  line-height: 18px;
-  /*  @media screen and (max-width:767px)
-    {
-      padding:0;
-    }*/
-  /*  @media screen and (max-width:550px)
-    {
-      font-size:125%;
-      line-height:120%;
-    }*/
+  line-height: 1.125em;
+}
+@media screen and (max-width: 550px) {
+  /* line 45, ../sass/_screen.scss */
+  body {
+    font-size: 1.3em;
+    line-height: 1.2em;
+  }
 }
 
-/* line 52, ../sass/_screen.scss */
+/* line 57, ../sass/_screen.scss */
 a {
   text-decoration: none;
   color: #333333;
 }
-/* line 55, ../sass/_screen.scss */
+/* line 60, ../sass/_screen.scss */
 a:hover {
   text-decoration: underline;
   color: #5aa8c1;
 }
-/* line 59, ../sass/_screen.scss */
+/* line 64, ../sass/_screen.scss */
 a.current {
   color: #1f8d9f;
 }
 
-/* line 63, ../sass/_screen.scss */
+/* line 68, ../sass/_screen.scss */
 h1 {
-  font-size: 120%;
+  font-size: 1.2em;
   font-weight: bold;
   color: #208d9f;
   margin-bottom: 2%;
 }
 
-/* line 69, ../sass/_screen.scss */
+/* line 74, ../sass/_screen.scss */
 h2, h3 {
   font-weight: bold;
   margin-bottom: 0.5%;
